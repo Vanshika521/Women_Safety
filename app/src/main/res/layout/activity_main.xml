@@ -8,9 +8,6 @@
     android:background="#E4B1F0"
     tools:context=".MainActivity" >
 
-
-
-
     <ImageView
         android:id="@+id/img"
         android:layout_width="250dp"
@@ -25,16 +22,16 @@
         />
 
 
-<TextView
-    android:id="@+id/textView1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Women Safety"
-    android:textStyle="bold"
-    android:textSize="35dp"
-    android:textAlignment="center"
-    app:layout_constraintTop_toBottomOf="@id/img"
-    />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Women Safety"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        />
 
 
     <TextView
