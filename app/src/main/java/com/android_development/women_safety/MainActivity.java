@@ -3,36 +3,48 @@ package com.android_development.women_safety;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
+
+    Animation top,bottom;
+    ImageView img;
+    TextView textView1,textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        top = AnimationUtils.loadAnimation(this,R.anim.topanim);
+        bottom = AnimationUtils.loadAnimation(this,R.anim.bottomanim);
+
+        img = findViewById(R.id.img);
+
+        textView1 = findViewById(R.id.textView1);
+        textView2 = findViewById(R.id.textView2);
+
+        img.setAnimation(top);
+        textView1.setAnimation(bottom);
+        textView2.setAnimation(bottom);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent =new Intent(MainActivity.this,Second.class);
+                startActivity(intent);
+                finish();
+            }
+        },2000);
+
     }
 
 
-    public void register(View v) {
-        Intent i_register=new Intent(MainActivity.this, Register.class);
-        startActivity(i_register);
 
-    }
-
-    public void display_no(View v) {
-        Intent i_view=new Intent(MainActivity.this, Display.class);
-        startActivity(i_view);
-
-    }
-
-    public void instruct(View v) {
-        Intent i_help=new Intent(MainActivity.this,Instructions.class);
-        startActivity(i_help);
-    }
-
-    public void verify(View v) {
-        Intent i_verify=new Intent(MainActivity.this,Verify.class);
-        startActivity(i_verify);
-    }
 }
