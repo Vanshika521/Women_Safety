@@ -13,7 +13,8 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="70dp"
-        android:src="@drawable/v"
+        android:src="@drawable/contact"
+        android:clickable="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
+        android:clickable="true"
         android:src="@drawable/call"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView1"
@@ -65,7 +67,8 @@
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="190dp"
-        android:src="@drawable/n2"
+        android:src="@drawable/notification"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView1"
         />
@@ -92,6 +95,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
         android:src="@drawable/alarm"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView2"
         />
@@ -118,6 +122,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginLeft="200dp"
         android:src="@drawable/location"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView3"
         />
