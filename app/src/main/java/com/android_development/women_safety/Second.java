@@ -97,23 +97,18 @@ public class Second extends AppCompatActivity {
         btn4 = findViewById(R.id.img4);
         btn5 = findViewById(R.id.img5);
 
-        // Initialize the MediaPlayer
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.siren);
-System.out.print("hlo");
-        btn3.setOnLongClickListener(new View.OnLongClickListener() {
+        // Initialize the MediaPlayer with the sound resource
+        mediaPlayer = MediaPlayer.create(this, R.raw.siren); // replace with your sound file name
+
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
-
-            public boolean onLongClick(View view) {
-                System.out.println("1");
-                Toast.makeText(Second.this, "Alarm clicked", Toast.LENGTH_SHORT).show();
-
+            public void onClick(View v) {
+                System.out.print("enter");
                 if (mediaPlayer != null) {
-                    mediaPlayer.stop();
-                    mediaPlayer.reset(); // Reset to prepare for playback again
-                    mediaPlayer.release(); // Release resources
-                    Toast.makeText(Second.this, "Alarm stopped", Toast.LENGTH_SHORT).show();
+                    System.out.print("if");
+
+                    mediaPlayer.start(); // Play the sound
                 }
-                return true;
             }
         });
     }
@@ -122,8 +117,8 @@ System.out.print("hlo");
     protected void onDestroy() {
         super.onDestroy();
         if (mediaPlayer != null) {
-            mediaPlayer.release(); // Release resources when the activity is destroyed
-            mediaPlayer = null; // Avoid memory leaks
+            mediaPlayer.release(); // Release the MediaPlayer resources
+            mediaPlayer = null;
         }
     }
 }
