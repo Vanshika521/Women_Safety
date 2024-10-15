@@ -1,4 +1,3 @@
-
 package com.android_development.women_safety;
 
 import android.content.Intent;
@@ -19,10 +18,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnSuccessListener;
+import android.location.Location;
+
 public class Second extends AppCompatActivity {
 
     ImageButton btn1, btn2, btn3, btn4, btn5;
     MediaPlayer mediaPlayer;
+    private FusedLocationProviderClient fusedLocationClient; // Declare the FusedLocationProviderClient
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +47,7 @@ public class Second extends AppCompatActivity {
         btn4 = findViewById(R.id.img4);
         btn5 = findViewById(R.id.img5);
 
-
-
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this); // Initialize FusedLocationProviderClient
 
         // Emergency call button functionality
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -67,8 +71,7 @@ public class Second extends AppCompatActivity {
             }
         });
 
-
-// Send SMS button functionality
+        // Send SMS button functionality
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,12 +93,8 @@ public class Second extends AppCompatActivity {
             }
         });
 
-
-
-
-
         // Initialize the MediaPlayer with the sound resource
-        mediaPlayer = MediaPlayer.create(this, R.raw.siren); // replace with your sound file name
+        mediaPlayer = MediaPlayer.create(this, R.raw.siren); // Replace with your sound file name
 
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +105,82 @@ public class Second extends AppCompatActivity {
                 }
             }
         });
+
+        // Share location button functionality
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Check for location permission
+                if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION)
+                        == PackageManager.PERMISSION_GRANTED) {
+
+                    // Get the last known location
+                    fusedLocationClient.getLastLocation()
+                            .addOnSuccessListener(Second.this, new OnSuccessListener<Location>() {
+                                @Override
+                                public void onSuccess(Location location) {
+                                    // Check if location is not null
+                                    if (location != null) {
+                                        double latitude = location.getLatitude();
+                                        double longitude = location.getLongitude();
+                                        String phoneNumber = "9729943453"; // Replace with the recipient's phone number
+
+                                        // Create the message with the location link
+                                        String message = "I need help! My current location: https://www.google.com/maps?q=" + latitude + "," + longitude;
+
+                                        // Send the SMS
+                                        SmsManager smsManager = SmsManager.getDefault();
+                                        smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+                                        Toast.makeText(getApplicationContext(), "Location shared successfully", Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(getApplicationContext(), "Unable to get current location", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
+                } else {
+                    // Request location permission if not granted
+                    ActivityCompat.requestPermissions(Second.this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 3);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 1) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted for phone call
+                String emergencyNumber = "tel:9729943453";
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse(emergencyNumber));
+                if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+                    startActivity(callIntent);
+                }
+            } else {
+                Toast.makeText(this, "Permission to make phone calls denied.", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == 2) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted for SMS
+                String phoneNumber = "9729943453";
+                String message = "This is a safety alert! I need help at my current location.";
+
+                SmsManager smsManager = SmsManager.getDefault();
+                smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+                Toast.makeText(getApplicationContext(), "SMS sent successfully", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Permission to send SMS denied.", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == 3) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted for location
+                // You may want to trigger the location sharing here if necessary
+            } else {
+                Toast.makeText(this, "Permission to access location denied.", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     @Override
