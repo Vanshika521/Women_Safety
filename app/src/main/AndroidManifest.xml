@@ -3,16 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.android_development.women_safety">
     <!-- Permissions -->
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
-
-    <!-- Indicate that telephony is not required on all devices -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Indicate that telephony is not required on all devices -->
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
@@ -28,9 +23,11 @@
         android:theme="@style/Theme.Women_SAFETY"
         tools:targetApi="31">
         <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
             android:name=".Second"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -39,9 +36,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Instructions Activity -->
-
-
+        </activity>
     </application>
 
 </manifest>
