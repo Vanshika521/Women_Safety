@@ -38,17 +38,14 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/enter1"
+        android:drawableLeft="@drawable/enter2"
         android:drawablePadding="20dp"
-        android:hint="Edit "
-
+        android:hint="Enter Phone Number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textColorHint="@color/white"
-        android:textSize="25dp"
-
-
+        android:textSize="20dp"
         android:textColor="@color/white"
-        android:layout_marginBottom="50dp"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
@@ -62,7 +59,7 @@
         android:id="@+id/img2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="20dp"
         android:clickable="true"
         android:src="@drawable/add1"
@@ -88,7 +85,7 @@
         android:id="@+id/img3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="190dp"
         android:src="@drawable/view2"
         android:clickable="true"

@@ -49,6 +49,15 @@ public class Second extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this); // Initialize FusedLocationProviderClient
 
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (Second.this,register.class);
+                startActivity(intent);
+            }
+        });
+
+
         // Emergency call button functionality
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
