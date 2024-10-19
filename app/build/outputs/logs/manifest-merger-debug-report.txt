@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.gms:play-services-location:18.0.0] C:\Users\dell\.gradle\caches\transforms-4\2c9d0f911fdbe77cd3a9dbf45c6c22e8\transformed\play-services-location-18.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.firebaseui:firebase-ui-firestore:8.0.2] C:\Users\dell\.gradle\caches\transforms-4\00e055bce841384a134ed418168d9346\transformed\firebase-ui-firestore-8.0.2\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dell\.gradle\caches\transforms-4\142e00f5b0f5e880eda9dff8e673dbb8\transformed\firebase-database-20.3.0\AndroidManifest.xml:15:1-38:12
@@ -106,15 +106,23 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:10:5-81
 	android:name
 		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:10:22-78
-uses-feature#android.hardware.telephony
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:11:5-13:36
-	android:required
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:13:9-33
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:12:5-75
 	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:12:9-50
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.READ_SMS
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:13:22-64
+uses-feature#android.hardware.telephony
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:16:9-50
 application
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:15:5-40:19
-INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:15:5-40:19
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:19:5-44:19
+INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:19:5-44:19
 MERGED from [com.google.android.gms:play-services-location:18.0.0] C:\Users\dell\.gradle\caches\transforms-4\2c9d0f911fdbe77cd3a9dbf45c6c22e8\transformed\play-services-location-18.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:18.0.0] C:\Users\dell\.gradle\caches\transforms-4\2c9d0f911fdbe77cd3a9dbf45c6c22e8\transformed\play-services-location-18.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-database:20.3.0] C:\Users\dell\.gradle\caches\transforms-4\142e00f5b0f5e880eda9dff8e673dbb8\transformed\firebase-database-20.3.0\AndroidManifest.xml:25:5-36:19
@@ -158,49 +166,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\de
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\dell\.gradle\caches\transforms-4\5932728f22750a0b69dd67e5f5984a30\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:26:9-35
 	android:fullBackupContent
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:22:9-54
 	android:roundIcon
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:25:9-54
 	tools:targetApi
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:24:9-29
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:28:9-29
 	android:icon
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:19:9-43
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:23:9-43
 	android:allowBackup
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:23:9-50
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:27:9-50
 	android:dataExtractionRules
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:17:9-65
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:21:9-65
 activity#com.android_development.women_safety.register
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:25:9-27:40
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:26:13-37
-activity#com.android_development.women_safety.Second
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:28:9-30:40
-	android:exported
 		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:29:13-35
-activity#com.android_development.women_safety.MainActivity
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:31:9-39:20
+activity#com.android_development.women_safety.Second
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:33:13-35
+activity#com.android_development.women_safety.MainActivity
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:35:9-43:20
+	android:exported
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:36:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml:41:27-74
 uses-sdk
 INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Women_SAFETY\app\src\main\AndroidManifest.xml

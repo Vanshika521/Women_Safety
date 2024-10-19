@@ -1,15 +1,18 @@
 package com.android_development.women_safety;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
+import android.telephony.SubscriptionInfo;
+import android.telephony.SubscriptionManager;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -17,17 +20,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 import android.location.Location;
 
-public class Second extends AppCompatActivity {
+import java.util.List;
 
+public class Second extends AppCompatActivity {
     ImageButton btn1, btn2, btn3, btn4, btn5;
     MediaPlayer mediaPlayer;
-    private FusedLocationProviderClient fusedLocationClient; // Declare the FusedLocationProviderClient
+    private FusedLocationProviderClient fusedLocationClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,111 +50,112 @@ public class Second extends AppCompatActivity {
         btn4 = findViewById(R.id.img4);
         btn5 = findViewById(R.id.img5);
 
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this); // Initialize FusedLocationProviderClient
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (Second.this,register.class);
-                startActivity(intent);
-            }
+        btn1.setOnClickListener(view -> {
+            Intent intent = new Intent(Second.this, MainActivity.class);
+            startActivity(intent);
         });
 
-
         // Emergency call button functionality
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Phone number for emergency call
-                String emergencyNumber = "tel:9729943453"; // Replace with actual emergency number
+        btn2.setOnClickListener(v -> {
+            String emergencyNumber = "tel:9729943453"; // Replace with actual emergency number
 
-                // Check for call permission
-                if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CALL_PHONE)
-                        == PackageManager.PERMISSION_GRANTED) {
-
-                    // Start the phone call
-                    Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse(emergencyNumber));
+            // Check for call permission
+            if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE)
+                    == PackageManager.PERMISSION_GRANTED) {
+                // Start the phone call
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse(emergencyNumber));
+                try {
                     startActivity(callIntent);
-                } else {
-                    // Request permission if not granted
-                    ActivityCompat.requestPermissions(Second.this, new String[]{android.Manifest.permission.CALL_PHONE}, 1);
+                } catch (SecurityException e) {
+                    Toast.makeText(getApplicationContext(), "Permission to make calls is denied.", Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                // Request permission if not granted
+                ActivityCompat.requestPermissions(Second.this, new String[]{Manifest.permission.CALL_PHONE}, 1);
             }
         });
 
         // Send SMS button functionality
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String phoneNumber = "9729943453"; // Replace with the recipient's phone number
-                String message = "This is a safety alert! I need help at my current location."; // Customize the message
+        btn3.setOnClickListener(v -> {
+            String phoneNumber = "9729943453"; // Replace with the recipient's phone number
+            String message = "This is a safety alert! I need help at my current location."; // Customize the message
 
-                // Check for SMS permission
-                if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.SEND_SMS)
-                        == PackageManager.PERMISSION_GRANTED) {
-
-                    // Send the SMS
-                    SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(phoneNumber, null, message, null, null);
-                    Toast.makeText(getApplicationContext(), "SMS sent successfully", Toast.LENGTH_SHORT).show();
-                } else {
-                    // Request SMS permission if not granted
-                    ActivityCompat.requestPermissions(Second.this, new String[]{android.Manifest.permission.SEND_SMS}, 2);
-                }
+            // Check for SMS permission
+            if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.SEND_SMS)
+                    == PackageManager.PERMISSION_GRANTED) {
+                sendSms(phoneNumber, message);
+            } else {
+                // Request SMS permission if not granted
+                ActivityCompat.requestPermissions(Second.this, new String[]{Manifest.permission.SEND_SMS}, 2);
             }
         });
 
         // Initialize the MediaPlayer with the sound resource
         mediaPlayer = MediaPlayer.create(this, R.raw.siren); // Replace with your sound file name
 
-        btn4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.print("enter");
-                if (mediaPlayer != null) {
-                    mediaPlayer.start(); // Play the sound
-                }
+        btn4.setOnClickListener(v -> {
+            if (mediaPlayer != null) {
+                mediaPlayer.start(); // Play the sound
             }
         });
 
         // Share location button functionality
-        btn5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Check for location permission
-                if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION)
-                        == PackageManager.PERMISSION_GRANTED) {
+        btn5.setOnClickListener(v -> {
+            // Check for location permission
+            if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.ACCESS_FINE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
+                fusedLocationClient.getLastLocation()
+                        .addOnSuccessListener(Second.this, location -> {
+                            if (location != null) {
+                                double latitude = location.getLatitude();
+                                double longitude = location.getLongitude();
+                                String message = "I need help! My current location: https://www.google.com/maps?q=" + latitude + "," + longitude;
 
-                    // Get the last known location
-                    fusedLocationClient.getLastLocation()
-                            .addOnSuccessListener(Second.this, new OnSuccessListener<Location>() {
-                                @Override
-                                public void onSuccess(Location location) {
-                                    // Check if location is not null
-                                    if (location != null) {
-                                        double latitude = location.getLatitude();
-                                        double longitude = location.getLongitude();
-                                        String phoneNumber = "9729943453"; // Replace with the recipient's phone number
-
-                                        // Create the message with the location link
-                                        String message = "I need help! My current location: https://www.google.com/maps?q=" + latitude + "," + longitude;
-
-                                        // Send the SMS
-                                        SmsManager smsManager = SmsManager.getDefault();
-                                        smsManager.sendTextMessage(phoneNumber, null, message, null, null);
-                                        Toast.makeText(getApplicationContext(), "Location shared successfully", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(getApplicationContext(), "Unable to get current location", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-                } else {
-                    // Request location permission if not granted
-                    ActivityCompat.requestPermissions(Second.this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 3);
-                }
+                                // Send the SMS
+                                sendSms("9729943453", message); // Replace with the recipient's phone number
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Unable to get current location", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            } else {
+                // Request location permission if not granted
+                ActivityCompat.requestPermissions(Second.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 3);
             }
         });
+    }
+
+    private void sendSms(String phoneNumber, String message) {
+        // Check for phone state permission
+        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_PHONE_STATE)
+                == PackageManager.PERMISSION_GRANTED) {
+            // Get the SubscriptionManager instance
+            SubscriptionManager subscriptionManager = (SubscriptionManager) getSystemService(Context.TELEPHONY_SUBSCRIPTION_SERVICE);
+
+            if (subscriptionManager != null) {
+                // Get the list of active subscriptions
+                List<SubscriptionInfo> subscriptionInfoList = subscriptionManager.getActiveSubscriptionInfoList();
+
+                if (subscriptionInfoList != null && !subscriptionInfoList.isEmpty()) {
+                    // Get the first available subscription (this might vary in case of multiple SIMs)
+                    int subscriptionId = subscriptionInfoList.get(0).getSubscriptionId();
+
+                    // Get the SmsManager for this subscription ID
+                    SmsManager smsManager = SmsManager.getSmsManagerForSubscriptionId(subscriptionId);
+
+                    // Send the SMS
+                    smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+                    Toast.makeText(getApplicationContext(), "SMS sent successfully", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "No active subscriptions found.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        } else {
+            // Request READ_PHONE_STATE permission if not granted
+            ActivityCompat.requestPermissions(Second.this, new String[]{Manifest.permission.READ_PHONE_STATE}, 4);
+        }
     }
 
     @Override
@@ -160,25 +164,24 @@ public class Second extends AppCompatActivity {
 
         if (requestCode == 1) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted for phone call
                 String emergencyNumber = "tel:9729943453";
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
                 callIntent.setData(Uri.parse(emergencyNumber));
-                if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
-                    startActivity(callIntent);
+                try {
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+                        startActivity(callIntent);
+                    }
+                } catch (SecurityException e) {
+                    Toast.makeText(this, "Permission to make phone calls denied.", Toast.LENGTH_SHORT).show();
                 }
             } else {
                 Toast.makeText(this, "Permission to make phone calls denied.", Toast.LENGTH_SHORT).show();
             }
         } else if (requestCode == 2) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission granted for SMS
                 String phoneNumber = "9729943453";
                 String message = "This is a safety alert! I need help at my current location.";
-
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage(phoneNumber, null, message, null, null);
-                Toast.makeText(getApplicationContext(), "SMS sent successfully", Toast.LENGTH_SHORT).show();
+                sendSms(phoneNumber, message);
             } else {
                 Toast.makeText(this, "Permission to send SMS denied.", Toast.LENGTH_SHORT).show();
             }
@@ -188,6 +191,13 @@ public class Second extends AppCompatActivity {
                 // You may want to trigger the location sharing here if necessary
             } else {
                 Toast.makeText(this, "Permission to access location denied.", Toast.LENGTH_SHORT).show();
+            }
+        } else if (requestCode == 4) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted for READ_PHONE_STATE
+                // You can re-trigger the SMS sending if needed
+            } else {
+                Toast.makeText(this, "Permission to read phone state denied.", Toast.LENGTH_SHORT).show();
             }
         }
     }

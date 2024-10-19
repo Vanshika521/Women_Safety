@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.android_development.women_safety" />
-                  <option name="mobileSdkAppId" value="1:1075128468891:android:de1128571be6403a8f8d3e" />
-                  <option name="projectId" value="women-safety-61ef2" />
-                  <option name="projectNumber" value="1075128468891" />
+                  <option name="appId" value="PLACEHOLDER" />
+                  <option name="mobileSdkAppId" value="" />
+                  <option name="projectId" value="" />
+                  <option name="projectNumber" value="" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
