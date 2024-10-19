@@ -1,44 +1,30 @@
 package com.android_development.women_safety;
 
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.CollectionReference;
-import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class register extends AppCompatActivity {
 
     EditText editText;
     ImageButton add, view, edit, dlt;
-    RecyclerView recyclerView;
-    PhoneAdapter phoneAdapter;  // Custom RecyclerView adapter for phone numbers
-    ArrayList<String> phoneList;  // List to hold phone numbers
+    ListView list;
     FirebaseFirestore db;  // Firestore database reference
+    private DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // Initialize Firebase Firestore
         db = FirebaseFirestore.getInstance();
 
         // Initialize UI elements
@@ -47,32 +33,41 @@ public class register extends AppCompatActivity {
         view = findViewById(R.id.img2);
         edit = findViewById(R.id.img3);
         dlt = findViewById(R.id.img4);
-        recyclerView = findViewById(R.id.recycleView);
+        list = findViewById(R.id.list);
 
-        // Initialize RecyclerView and adapter
-        phoneList = new ArrayList<>();
-        phoneAdapter = new PhoneAdapter(phoneList, this);
+        databaseReference = FirebaseDatabase.getInstance().getReference("phone_numbers"); // Firebase path
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(phoneAdapter);
 
-        // Load phone numbers from Firebase
-        loadPhoneNumbers();
+//        // Initialize RecyclerView and adapter
+//        phoneList = new ArrayList<>();
+//        phoneAdapter = new PhoneAdapter(phoneList, this);
+//
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setAdapter(phoneAdapter);
+//
+//        // Load phone numbers from Firebase
+//        loadPhoneNumbers();
 
         // Add button click listener to add phone number to Firestore
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String phoneNumber = editText.getText().toString().trim();
-
-                if (!TextUtils.isEmpty(phoneNumber)) {
-                    addPhoneNumberToFirestore(phoneNumber);
+                if (!phoneNumber.isEmpty()) {
+                    // Directly saving data without unique ID
+                    databaseReference.setValue(phoneNumber).addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(register.this, "Data added successfully!", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(register.this, "Failed to add data.", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 } else {
-                    Toast.makeText(register.this, "Please enter a phone number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(register.this, "Please enter a phone number!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
+/*
         // Delete button click listener to delete the entered phone number
         dlt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,6 +155,6 @@ public class register extends AppCompatActivity {
                     Toast.makeText(register.this, "Failed to load phone numbers", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
     }
 }

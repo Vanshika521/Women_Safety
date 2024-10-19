@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -34,7 +35,7 @@ public class MainActivity extends Activity {
         textView2.setAnimation(bottom);
 
 
-        new Handler().postDelayed(new Runnable() {
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent =new Intent(MainActivity.this,Second.class);
@@ -42,6 +43,7 @@ public class MainActivity extends Activity {
                 finish();
             }
         },2000);
+
 
     }
 

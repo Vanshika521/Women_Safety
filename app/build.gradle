@@ -38,6 +38,8 @@ android {
 dependencies {
     implementation 'com.google.android.gms:play-services-location:18.0.0'
     implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    implementation 'com.google.firebase:firebase-firestore:24.8.0'
 
     implementation libs.appcompat
     implementation libs.material
@@ -46,4 +48,6 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+
 }

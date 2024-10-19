@@ -1,178 +1,174 @@
 [
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_view23.jpeg.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/view23.jpeg"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_enter1.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/enter1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/ic_launcher_background.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/xml_backup_rules.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_view1.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/view1.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_location.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/location.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_first_.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/first_.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_add.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/add.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_delete1.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/delete1.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/raw_siren.mp3.flat",
+        "source": "com.android_development.women_safety.app-main-38:/raw/siren.mp3"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/layout_activity_second.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/layout/activity_second.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_add_.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/add_.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_add_.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/add_.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_view23.jpeg.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/view23.jpeg"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_enter1.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/enter1.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_view1.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/view1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/layout_activity_main.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/layout/activity_main.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_add1.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/add1.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_alarm.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/alarm.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_first_.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/first_.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_forth.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/forth.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/anim_topanim.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/anim/topanim.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_notification.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/notification.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_second.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/second.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/xml_data_extraction_rules.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/xml/data_extraction_rules.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_notification.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/notification.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_delete.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/delete.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_contact.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/contact.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/anim_topanim.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/anim/topanim.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_enter2.jpg.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/enter2.jpg"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_delete1.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/delete1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_forth.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/forth.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_enter.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/enter.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_view2.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/view2.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_dlt1.jpeg.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/dlt1.jpeg"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/raw_siren.mp3.flat",
-        "source": "com.android_development.women_safety.app-main-37:/raw/siren.mp3"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_enter2.jpg.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/enter2.jpg"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_second.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/second.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_add1.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/add1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/layout_activity_register.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/layout/activity_register.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/anim_bottomanim.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/anim/bottomanim.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_contact.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/contact.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_enter.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/enter.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/layout_activity_register.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/layout/activity_register.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_alarm.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/alarm.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_dlt1.jpeg.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/dlt1.jpeg"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_view2.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/view2.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_edit.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/edit.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_edit.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/edit.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/layout_phone_item.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/layout/phone_item.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_delete.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/delete.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_location.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/location.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/layout/activity_main.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/xml_backup_rules.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/xml/backup_rules.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.android_development.women_safety.app-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.android_development.women_safety.app-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_call.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/call.png"
+        "merged": "com.android_development.women_safety.app-debug-36:/drawable_call.png.flat",
+        "source": "com.android_development.women_safety.app-main-38:/drawable/call.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-35:/drawable_add.png.flat",
-        "source": "com.android_development.women_safety.app-main-37:/drawable/add.png"
-    },
-    {
-        "merged": "com.android_development.women_safety.app-debug-35:/anim_bottomanim.xml.flat",
-        "source": "com.android_development.women_safety.app-main-37:/anim/bottomanim.xml"
+        "merged": "com.android_development.women_safety.app-debug-36:/layout_activity_second.xml.flat",
+        "source": "com.android_development.women_safety.app-main-38:/layout/activity_second.xml"
     }
 ]

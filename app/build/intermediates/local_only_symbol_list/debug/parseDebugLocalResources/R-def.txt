@@ -36,9 +36,8 @@ id img2
 id img3
 id img4
 id img5
+id list
 id main
-id phoneTextView
-id recycleView
 id textView1
 id textView2
 id textView3
@@ -47,7 +46,6 @@ id textView5
 layout activity_main
 layout activity_register
 layout activity_second
-layout phone_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw siren
