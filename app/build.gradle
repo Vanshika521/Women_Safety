@@ -51,4 +51,9 @@ dependencies {
     androidTestImplementation libs.espresso.core
 
 
+        implementation platform('com.google.firebase:firebase-bom:32.0.0') // Check the latest version
+        implementation 'com.google.firebase:firebase-database'
+
+
+
 }
