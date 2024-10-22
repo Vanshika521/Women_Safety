@@ -53,6 +53,7 @@ public class register extends AppCompatActivity {
         });
     }
 
+
     private DatabaseReference getDatabaseReference() {
         return FirebaseDatabase.getInstance().getReference("phone_numbers");
     }
