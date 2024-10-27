@@ -52,8 +52,15 @@ raw siren
 string add_contact_button_desc
 string alarm_button_desc
 string call_button_desc
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string location_button_desc
 string notification_button_desc
+string project_id
 style Base.Theme.Women_SAFETY
 style Theme.Women_SAFETY
 xml backup_rules

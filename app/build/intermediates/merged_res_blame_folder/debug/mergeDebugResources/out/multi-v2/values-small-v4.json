@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.android_development.women_safety.app-mergeDebugResources-34:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.android_development.women_safety.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-4\\148967bc46187f7efe53c29dbcd63134\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-4\\8baa43082aaa897024ffc7bb4711e7e4\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

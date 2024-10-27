@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.android_development.women_safety.app-mergeDebugResources-34:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.android_development.women_safety.app-mergeDebugResources-35:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-4\\c1d12adf6222ac7382f8444f9576ead5\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\dell\\.gradle\\caches\\transforms-4\\1a3cd4e48febbc76873822fc4a54c3ef\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

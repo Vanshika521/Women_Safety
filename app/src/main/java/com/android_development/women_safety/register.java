@@ -1,6 +1,7 @@
 package com.android_development.women_safety;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -40,14 +41,20 @@ public class register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String phoneNumber = editText.getText().toString().trim();
+                Log.d("print","1");
                 if (!phoneNumber.isEmpty()) {
                     // Use the method to get the database reference
+                    Log.d("print","2");
                     String id = getDatabaseReference().push().getKey();
-                    getDatabaseReference().child(id).setValue(phoneNumber).addOnCompleteListener(task -> {
+                    Log.d("print","3");
+                    getDatabaseReference().child("Phone_no").setValue(phoneNumber).addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
+                            Log.d("print","4");
                             Toast.makeText(register.this, "Phone number added to Realtime Database!", Toast.LENGTH_SHORT).show();
+                            Log.d("print","5");
                             editText.setText("");  // Clear the input field after successful addition
                         } else {
+                            Log.d("print","6");
                             Toast.makeText(register.this, "Failed to add phone number to Realtime Database.", Toast.LENGTH_SHORT).show();
                         }
                     });
