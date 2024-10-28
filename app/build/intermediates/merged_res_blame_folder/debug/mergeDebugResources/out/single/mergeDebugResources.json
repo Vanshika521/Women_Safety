@@ -4,171 +4,175 @@
         "source": "com.android_development.women_safety.app-main-39:/layout/activity_register.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_view2.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/view2.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_alarm.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\alarm.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_notification.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\notification.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_add_.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/add_.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_delete.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/delete.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_edit.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/edit.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_view23.jpeg.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\view23.jpeg"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_forth.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/forth.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_add_.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\add_.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/anim_topanim.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/anim/topanim.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_view1.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\view1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/xml_data_extraction_rules.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_edit.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\edit.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_second.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/second.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_enter1.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\enter1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_add.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\add.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/layout_activity_main.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/layout/activity_main.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_contact.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/contact.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_location.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/location.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_first_.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\first_.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/xml_backup_rules.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_dlt1.jpeg.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/dlt1.jpeg"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/layout_activity_second.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/layout/activity_second.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\raw_siren.mp3.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\raw\\siren.mp3"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_add.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/add.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_enter2.jpg.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\enter2.jpg"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_second.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\second.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_enter.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/enter.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_view2.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\view2.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/anim_bottomanim.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/anim/bottomanim.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_location.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\location.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_notification.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/notification.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\layout_activity_second.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\layout\\activity_second.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_forth.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\forth.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_call.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/call.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_contact.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\contact.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_add1.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/add1.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_first_.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/first_.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_view1.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/view1.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\anim_bottomanim.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\anim\\bottomanim.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_delete1.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/delete1.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_add1.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\add1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_view23.jpeg.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/view23.jpeg"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_call.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\call.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_enter2.jpg.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/enter2.jpg"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_delete1.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\delete1.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_enter.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\enter.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/raw_siren.mp3.flat",
-        "source": "com.android_development.women_safety.app-main-39:/raw/siren.mp3"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_enter1.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/enter1.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/drawable_alarm.png.flat",
-        "source": "com.android_development.women_safety.app-main-39:/drawable/alarm.png"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_delete.png.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\delete.png"
     },
     {
-        "merged": "com.android_development.women_safety.app-debug-37:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.android_development.women_safety.app-main-39:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\drawable_dlt1.jpeg.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\drawable\\dlt1.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-debug-37:\\anim_topanim.xml.flat",
+        "source": "C:\\Users\\dell\\.gradle\\daemon\\8.7\\com.android_development.women_safety.app-main-39:\\anim\\topanim.xml"
     }
 ]
