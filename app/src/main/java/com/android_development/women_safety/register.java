@@ -2,10 +2,13 @@ package com.android_development.women_safety;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
@@ -15,11 +18,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+
 public class register extends AppCompatActivity {
 
     EditText editText;
     ImageButton add, view, edit, dlt;
     ListView list;
+    ArrayAdapter<String> arrayAdapter;  // ArrayAdapter for the ListView
+    ArrayList<String> phoneNumbers = new ArrayList<>();  // ArrayList to store phone numbers
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,6 +96,18 @@ public class register extends AppCompatActivity {
             }
         });
 
+
+        arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, phoneNumbers);
+        list.setAdapter(arrayAdapter);
+
+        // Set an item click listener for the ListView
+        list.setOnItemClickListener((parent, view, position, id) -> {
+            String selectedPhoneNumber = phoneNumbers.get(position);  // Get the selected phone number
+            editText.setText(selectedPhoneNumber);  // Copy it to the EditText field
+            Toast.makeText(register.this, "Number copied to EditText ", Toast.LENGTH_SHORT).show();
+        });
+
+
         // View all phone numbers from Firebase
         view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,12 +115,14 @@ public class register extends AppCompatActivity {
                 getDatabaseReference().addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        StringBuilder data = new StringBuilder();
+                        phoneNumbers.clear();  // Clear the ArrayList before adding new data
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             String phoneNumber = snapshot.getValue(String.class);
-                            data.append(phoneNumber).append("\n");
+                            if (phoneNumber != null) {
+                                phoneNumbers.add(phoneNumber);  // Add each phone number to the ArrayList
+                            }
                         }
-                        editText.setText(data.toString());
+                        arrayAdapter.notifyDataSetChanged();  // Notify the adapter of data changes
                         Toast.makeText(register.this, "Data loaded successfully", Toast.LENGTH_SHORT).show();
                     }
 
@@ -113,33 +134,52 @@ public class register extends AppCompatActivity {
             }
         });
 
-        // Edit phone number in Firebase
+
+// Edit phone number in Firebase
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String oldPhoneNumber = editText.getText().toString().trim();
-                String newPhoneNumber = editText.getText().toString().trim();
 
-                if (!oldPhoneNumber.isEmpty() && !newPhoneNumber.isEmpty()) {
-                    getDatabaseReference().orderByValue().equalTo(oldPhoneNumber)
-                            .addListenerForSingleValueEvent(new ValueEventListener() {
-                                @Override
-                                public void onDataChange(DataSnapshot dataSnapshot) {
-                                    if (dataSnapshot.exists()) {
-                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                                            snapshot.getRef().setValue(newPhoneNumber);
-                                        }
-                                        Toast.makeText(register.this, "Phone number updated successfully!", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(register.this, "Phone number not found.", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
+                if (!oldPhoneNumber.isEmpty()) {
+                    // Show dialog to input new phone number
+                    EditText newPhoneInput = new EditText(register.this);
+                    newPhoneInput.setHint("Enter New Phone Number");
 
-                                @Override
-                                public void onCancelled(DatabaseError databaseError) {
-                                    Toast.makeText(register.this, "Error updating data.", Toast.LENGTH_SHORT).show();
+                    new AlertDialog.Builder(register.this)
+                            .setTitle("Edit Phone Number")
+                            .setView(newPhoneInput)
+                            .setPositiveButton("Update", (dialog, which) -> {
+                                String newPhoneNumber = newPhoneInput.getText().toString().trim();
+
+                                if (!newPhoneNumber.isEmpty()) {
+                                    // Find and update phone number in Firebase
+                                    getDatabaseReference().orderByValue().equalTo(oldPhoneNumber)
+                                            .addListenerForSingleValueEvent(new ValueEventListener() {
+                                                @Override
+                                                public void onDataChange(DataSnapshot dataSnapshot) {
+                                                    if (dataSnapshot.exists()) {
+                                                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                                            snapshot.getRef().setValue(newPhoneNumber);
+                                                        }
+                                                        Toast.makeText(register.this, "Phone number updated successfully!", Toast.LENGTH_SHORT).show();
+                                                        editText.setText("");  // Clear input after update
+                                                    } else {
+                                                        Toast.makeText(register.this, "Phone number not found.", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }
+
+                                                @Override
+                                                public void onCancelled(DatabaseError databaseError) {
+                                                    Toast.makeText(register.this, "Error updating data.", Toast.LENGTH_SHORT).show();
+                                                }
+                                            });
+                                } else {
+                                    Toast.makeText(register.this, "Please enter the new phone number!", Toast.LENGTH_SHORT).show();
                                 }
-                            });
+                            })
+                            .setNegativeButton("Cancel", null)
+                            .show();
                 } else {
                     Toast.makeText(register.this, "Please enter the phone number to update!", Toast.LENGTH_SHORT).show();
                 }
@@ -147,7 +187,7 @@ public class register extends AppCompatActivity {
         });
     }
 
-    private DatabaseReference getDatabaseReference() {
+        private DatabaseReference getDatabaseReference() {
         return FirebaseDatabase.getInstance().getReference("phone_numbers");
     }
 }
