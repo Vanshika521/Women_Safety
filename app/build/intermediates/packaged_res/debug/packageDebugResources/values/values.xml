@@ -6,6 +6,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <string name="add_contact_button_desc">Add contact button</string>
     <string name="alarm_button_desc">Alarm button</string>
+    <string name="app_name">Women Safety</string>
     <string name="call_button_desc">Call button</string>
     <string name="firebase_database_url" translatable="false">https://women-safety-61ef2-default-rtdb.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">1075128468891</string>

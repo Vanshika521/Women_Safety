@@ -51,6 +51,7 @@ mipmap ic_launcher_round
 raw siren
 string add_contact_button_desc
 string alarm_button_desc
+string app_name
 string call_button_desc
 string firebase_database_url
 string gcm_defaultSenderId

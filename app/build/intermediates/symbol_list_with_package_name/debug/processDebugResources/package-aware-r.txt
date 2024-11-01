@@ -3930,6 +3930,7 @@ string abc_toolbar_collapse_description
 string add_contact_button_desc
 string alarm_button_desc
 string androidx_startup
+string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_collapse

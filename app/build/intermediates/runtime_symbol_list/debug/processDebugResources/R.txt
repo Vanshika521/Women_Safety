@@ -3929,6 +3929,7 @@ int string abc_toolbar_collapse_description 0x7f10001a
 int string add_contact_button_desc 0x7f10001b
 int string alarm_button_desc 0x7f10001c
 int string androidx_startup 0x7f10001d
+int string app_name 0x7f1000c4
 int string appbar_scrolling_view_behavior 0x7f10001e
 int string bottom_sheet_behavior 0x7f10001f
 int string bottomsheet_action_collapse 0x7f100020
