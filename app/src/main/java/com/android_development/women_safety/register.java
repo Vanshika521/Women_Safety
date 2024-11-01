@@ -58,20 +58,31 @@ public class register extends AppCompatActivity {
         // Add phone number to Firebase
         add.setOnClickListener(view -> {
             String phoneNumber = editText.getText().toString().trim();
+
+            // Check if input is not empty and is valid
             if (!phoneNumber.isEmpty()) {
                 String id = getDatabaseReference().push().getKey();
                 getDatabaseReference().child(id).setValue(phoneNumber).addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        Toast.makeText(register.this, "Phone number added to Realtime Database!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(register.this, "Phone number added successfully!", Toast.LENGTH_SHORT).show();
+
+                        // Add phone number to the local list and update the ListView
+                        phoneNumbers.add(phoneNumber);
+                        arrayAdapter.notifyDataSetChanged();
+
+                        // Clear EditText after adding
                         editText.setText("");
                     } else {
                         Toast.makeText(register.this, "Failed to add phone number.", Toast.LENGTH_SHORT).show();
                     }
                 });
             } else {
+                // Display a message if no phone number is entered
                 Toast.makeText(register.this, "Please enter a phone number!", Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
         // Edit button functionality to update the selected phone number
         edit.setOnClickListener(view -> {
@@ -116,6 +127,7 @@ public class register extends AppCompatActivity {
         // Delete phone number from Firebase
         dlt.setOnClickListener(view -> {
             String phoneNumberToDelete = editText.getText().toString().trim();
+
             if (!phoneNumberToDelete.isEmpty()) {
                 getDatabaseReference().orderByValue().equalTo(phoneNumberToDelete)
                         .addListenerForSingleValueEvent(new ValueEventListener() {
@@ -125,7 +137,13 @@ public class register extends AppCompatActivity {
                                     for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                                         snapshot.getRef().removeValue();
                                     }
+                                    // Remove the phone number from the local list and update the ListView
+                                    phoneNumbers.remove(phoneNumberToDelete);
+                                    arrayAdapter.notifyDataSetChanged();
                                     Toast.makeText(register.this, "Phone number deleted successfully!", Toast.LENGTH_SHORT).show();
+
+                                    // Clear EditText after deleting
+                                    editText.setText("");
                                 } else {
                                     Toast.makeText(register.this, "Phone number not found.", Toast.LENGTH_SHORT).show();
                                 }
@@ -140,6 +158,7 @@ public class register extends AppCompatActivity {
                 Toast.makeText(register.this, "Please enter the phone number to delete!", Toast.LENGTH_SHORT).show();
             }
         });
+
 
         // View button functionality to load data from Firebase
         view.setOnClickListener(view -> {

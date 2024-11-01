@@ -8,6 +8,16 @@
     android:background="#7E60BF"
     tools:context=".register">
 
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
@@ -136,5 +146,5 @@
         app:layout_constraintTop_toBottomOf="@id/textView3"
         android:layout_marginTop="20dp"/>
 
-
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

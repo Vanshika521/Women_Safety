@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">Women Safety</string>
     <string name="add_contact_button_desc">Add contact button</string>
     <string name="call_button_desc">Call button</string>
     <string name="notification_button_desc">Notification button</string>

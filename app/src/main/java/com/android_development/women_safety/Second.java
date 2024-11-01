@@ -27,7 +27,7 @@ public class Second extends AppCompatActivity {
     ImageButton btn1, btn2, btn3, btn4, btn5;
     MediaPlayer mediaPlayer;
     private FusedLocationProviderClient fusedLocationClient;
-//
+
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
@@ -217,11 +217,6 @@ public class Second extends AppCompatActivity {
 //        }
 //    }
 //}
-
-
-
-
-
 
 
         private DatabaseReference databaseReference;
